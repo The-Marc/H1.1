@@ -1,11 +1,12 @@
 public class Item{
+  
   //The name of the item
   private String itemName;
   //The weight of the item
   private double itemWeight;
   //The description of the item
   private String itemDescription;
-////////////////////////////////////////////////////////////////////////
+
   /*Accessor method to get name
   *@return the name of item
   */
@@ -22,7 +23,7 @@ public class Item{
   public Item(String name){
     itemName = name;
   }
-//////////////////////////////////////////////////////////////////////////
+  
   //for itemWeight
   public double getWeight(){
     return itemWeight;
@@ -33,21 +34,10 @@ public class Item{
   public Item(double weight){
     itemWeight = weight;
   }
-//////////////////////////////////////////////////////////////////////////
-  //for examine
-  public String examine(){
-    return itemDescription;
-  }
-  private void setDescription(String description){
-    itemDescription = description;
-  }
-  public Item(String description){
-    itemDescription = description;
-  }
-/////////////////////////////////////////////////////////////////////////
+  
+  
+  
   public Item(){
   }
   
-  
-  "This is a " + name + " and it weighs " + getWeight();
 }
