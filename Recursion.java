@@ -10,7 +10,11 @@ public class Recursion{
   }*/
   
   public static double squareRoot(double x, double guess, double error, double acceptedError){
-    error = x - guess * guess;
+    error = guess * guess - x;
+    System.out.println("guess: " + guess);
+    System.out.println("error: " + error);
+    System.out.println();
+    
     if (error <= acceptedError)
       return guess;
     else {
@@ -21,7 +25,7 @@ public class Recursion{
   
   
   public static void main(String[] args){
-    double x = 9;
+    double x = 64;
     double acceptedError = 0.25;
     System.out.println(squareRoot(x, x/2, 1, acceptedError));
   
